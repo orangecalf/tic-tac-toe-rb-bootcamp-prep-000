@@ -82,15 +82,15 @@ end
 def turn_count(board)
   counter = 0
   board.each do |box|
-    if box == "X"
+   if box == "X"
       counter += 1
-    elsif box == "O"
+   elsif box == "O"
     
-      counter += 1
+       counter += 1
+      end
     end
+    return counter
   end
-  return counter
-end
   
 
   def turn(board)
@@ -106,6 +106,7 @@ end
     end
   end
   
+  
   def play(board)
    until over?(board)
      draw?(board
@@ -119,9 +120,5 @@ end
     
   end
 
-  
-  
-  
-  
   
   
